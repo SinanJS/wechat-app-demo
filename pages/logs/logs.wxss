@@ -1,0 +1,35 @@
+.title-box{
+  padding: 20rpx;
+  font-size: 40rpx;
+  color: #333;
+}
+.title{
+
+}
+.content{
+  padding:20rpx;
+}
+.row{
+  font-size: 24rpx;
+  color:#444;
+}
+.news-img{
+  width: 100%;
+}
+.info{
+  font-size: 24rpx;
+  color:#8d8d8d;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #F6F8F9;
+}
+.src{
+  width: 40%;
+  text-align: left;
+}
+.pubtime{
+  width: 60%;
+  text-align: right;
+}

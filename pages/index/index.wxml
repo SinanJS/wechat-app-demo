@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class="swiper-box" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper-item wx:for="{{imgUrls}}" data-key='{{idx}}' wx:for-index='idx' bindtap="gotoNews">
+      <image src="{{item}}" class="slide-image" width="355" height="150"></image>
+      <text class="sw-txt">这里是示例文字{{idx}}</text>
+    </swiper-item>
+</swiper>
+</view>
+<view class="news-list">
+  <view class="news-list-item" wx:for="{{news.contentlist}}" wx:for-item="item" bindtap="gotoNews" wx:for-index="idx" data-key='{{idx}}'>
+    <image wx:if="{{item.havePic}}" src="{{item.imageurls[0].url}}" class="news-img"></image>
+    <image wx:if="{{!item.havePic}}" src="../../img/t2.jpg" class="news-img"></image>
+    <view class="news-titles-box">
+      <text class="title">{{item.title}}</text>          
+      <text class="src">来源：{{item.source}}</text>
+      <text class="pubtime">{{item.pubDate}}</text>                       
+    </view>
+  </view>
+</view>

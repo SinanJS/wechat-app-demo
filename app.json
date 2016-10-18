@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTitleText": "热点新闻",
+    "navigationBarBackgroundColor":"#fff",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
